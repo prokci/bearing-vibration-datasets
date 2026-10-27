@@ -1,0 +1,13 @@
+services:
+  download_and_prepare_bearing_data:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: download_and_prepare_bearing_data
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+      - UNRAR_TOOL=unrar
+    volumes:
+      - ./data:/app/data
+    command: ["--n_chunks", "5"]
