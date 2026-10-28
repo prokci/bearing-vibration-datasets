@@ -29,7 +29,7 @@
 ## Supported Datasets
 The pipeline natively supports raw vibration data from the following benchmark repositories:
 - **[CWRU](https://engineering.case.edu/bearingdatacenter/download-data-file)** (Case Western Reserve University)
-- **[fm6xzxnf36-2](https://data.mendeley.com/datasets/fm6xzxnf36/2)** (Mendeley Data)
+- **[fm6xzxnf36-2](https://data.mendeley.com/datasets/fm6xzxnf36/2)**
 - **[HUST](https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-023-06400-4)** (Huazhong University of Science and Technology)
 - **[JNU](https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-023-06400-4)** (Jiangnan University)
 - **[KAt](https://groups.uni-paderborn.de/kat/BearingDataCenter/)** (Paderborn University)
@@ -127,7 +127,7 @@ python prepare_bearing_data.py --datasets CWRU HUST KAt --n_chunks 5
 | **`de`** | Outer race diameter (outside diameter). | `float` (mm) | e.g., `52.0` |
 | **`b`** | Contact angle between the rolling element and the raceway. | `float` (degrees) | e.g., `0.0`, `13.0` |
 | **`rotation`** | Specifies which race is rotating relative to the load. | `str` | `internal`, `external` |
-| **`rolling_body`** | The geometric type of the rolling element. | `str` | `ball`, `rolling` (roller) |
+| **`rolling_body`** | The geometric type of the rolling element. | `str` | `ball`, `rolling` |
 | **`type`** | The fundamental operating principle of the bearing. | `str` | `rolling`, `sliding` |
 | **`accuracy`** | Indicates whether the parameter values are exact (from manufacturer specs) or mathematically approximated. | `bool` | `true`, `false` |
 | **`slippage`** | Indicates whether the rolling element experiences slip during operation (affects fault frequency calculations). | `bool` | `true`, `false` |
